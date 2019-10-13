@@ -85,6 +85,7 @@ public class HomeActivity extends AppCompatActivity
         //to display the username
         userNameTextView.setText(Prevalent.currentOnlineUsers.getName());
         //userNameTextView.setText(Prevalent.currentOnlineUsers.getName());
+        Picasso.get().load(Prevalent.currentOnlineUsers.getImage()).placeholder(R.drawable.profile).into(profileImageView);
 
 
         recyclerView = findViewById(R.id.recycler_menu);
